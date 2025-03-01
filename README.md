@@ -1,2 +1,2 @@
 # Portfolio
-This repository shows my skills IT - industry
+This repository shows my skills in IT - industry
