@@ -1,42 +1,36 @@
 # Kotlin
 
 Пример кода
+Поиск полиндромов
 
+ - Функция поиска полиндрома слова
 ```kotlin
-fun isValidString(str: String): Boolean {
-    var state = false
-    if (str.isEmpty()) state = false
-    else {
-       for (ch in str) {
-            if (ch == str[0]) {
-                if (isLetter(ch) || ch == '_') state = true
-                else state = false
-            }
-            else {
-                if (isLetter(ch) || isDigit(ch)) state = true
-                else state = false
-            }
-       }
+fun isPalindrome(word: String): Boolean = word == word.reversed()
+```
+
+ - А эта функция, с игнорированием регистра
+```kotlin
+fun isPalIgnoreCase(word: String): Boolean = isPalindrome(word.lowercase())
+```
+ 
+ - А это для поиска полиндрома/предложения
+```
+fun isPalindromeSentence(sentence: String): Boolean {
+    var str = ""
+    for (ch in sentence) {
+        if (isLetter(ch)) {
+            str += ch
+        }
     }
-    return state
+
+    return isPalIgnoreCase(str)
 }
 ```
 
-Функция isLetter
-```kotlin
-fun isLetter(ch: Char): Boolean {
-    var state = false
-    if (ch in 'a'..'z') {
-        state = true
-    }
-    else if (ch in 'A'..'Z') {
-        state = true
-    }
-    return state
-}
-```
 
-Функция isDigit
-```kotlin
-fun isDigit(char: Char) = char in '0'..'9'
+ - Вспомогательная функция для поиска символов
+ ```kotlin
+ fun isLetter(char: Char): Boolean =
+    char in 'a'..'z' ||
+    char in 'A'..'Z'
 ```
