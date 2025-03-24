@@ -20,7 +20,7 @@
 Давайте я коротко перечислю мои сильные стороны📝
 
  -	Обладаю знанием Android Studio, [`Kotlin`](https://github.com/ArkadyBard/Portfolio/blob/main/kotlin.md)  📱
- -	Подтвержденные навыки в [SQL]() 🗂
+ -	Подтвержденные навыки в [SQL](https://github.com/ArkadyBard/Portfolio/blob/main/sql.md) 🗂
  -	Подтвержденный уровень English 📖
  -	Знания [Git](https://github.com/ArkadyBard/Portfolio/blob/main/git.md)                 🥢
  -	Техническое образование        🛠
